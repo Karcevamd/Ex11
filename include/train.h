@@ -4,18 +4,18 @@
 #ifdef TRAIN_H
 #include <iostream>
 class Cage {
-    bool light; // Свет (вкл/выкл)
+    bool light;  // Svet(vkl/vk)
  public:
-    Cage* next; // следующий вагон
-    Cage* prev; // предыдущий вагон
+    Cage* next;  // sleduyshiy vagon
+    Cage* prev;  // predidushiy vagon
     Cage() : light(false), next(nullptr), prev(nullptr) {}
     void on() { light = true; }
     void off() { light = false; }
     bool get() const { return light; }
 };
 class Train {
-    Cage* first; // указатель на первый вагон
-    Cage* last;  // указатель на последний вагон
+    Cage* first;  // ukazatel' na perviy vagon
+    Cage* last;   // ukazatel' na posledniy vagon
  public:
     Train();
     void addCageInTrain();

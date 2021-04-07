@@ -40,6 +40,6 @@ unsigned int Train::sumCage() {
             cage = cage->prev;
         }
         if (cage->get()) return sum;
-        sum=sum+1;
+        sum = sum+1;
     }
 }
